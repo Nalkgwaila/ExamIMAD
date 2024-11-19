@@ -25,16 +25,20 @@ class DetailedViewScreen: ComponentActivity() {
             val AfternoonRunData = intent.getStringArrayListExtra("Afternoon Run Data ")
             val appNameData = intent.getStringArrayListExtra("appNameData")
 
-            val dailyKilometers = doubleArrayOf(0.6, 2.0, 4.0, 0.0, 1.5, 2.0,3.5,2.0)
+            val dailyKilometers4 = doubleArrayOf(0.6, 2.0, 4.0, 0.0, 1.5, 2.0,3.5,2.0)
+            val totalKilometers3 : Int= 100
+            val  totalKilometersDouble : Double = totalKilometers3 .toDouble()
 
             var totalKilometers = 0.0
             var averagekilometers = 0.0
 
-            for(i in dailyKilometers.indices) {
-                totalKilometers += dailyKilometers[i]
+            for(i in dailyKilometers4.indices) {
+                totalKilometers += dailyKilometers4[i]
             }
-             averagekilometers = totalKilometers/dailyKilometers
 
+            var totalKilomters: Double = 100.0
+            var dailyKilometers: Double = 5.9
+               var averageKilometers2 = totalKilometers / dailyKilometers
 
             println("Average kilometers per day: $averagekilometers")
             }

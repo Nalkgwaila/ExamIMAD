@@ -11,43 +11,49 @@ import androidx.compose.material3.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
 import java.lang.Exception
 
-class ErrorHandling : ComponentActivity() {
 
+class ErrorHandling : ComponentActivity() {
     fun showError(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show()
     }
-
-    fun validateInput(date: String, distance:String) :
+        fun validateInput(date: String, distance: String, time:String,pace:String ) :
             Boolean {
-        if (date.isEmpty())
-            distance.isEmpty()
-        showError("Please fill in all fields.")
-        return false
+        if (date.isEmpty() || distance.isEmpty() || time.isEmpty() || pace.isEmpty()) {
+            showError("Please fill in all fields.")
+            return false
+        }
+
+
 
         return true
 
         try {
 
         }catch (e: Exception) {
-            showError("an error occured: $ { e.message}")
+            showError("An error occured: ${e.message}")
         }
-
         fun showError(message: String) {
             Toast.makeText(this, message, Toast.LENGTH_LONG).show()
-        }
-
-        fun showFeedBack(message: String) {
-
-            AlertDialog.Builder(this)
-                .setTitle("Error")
-                .setMessage("message")
-                .setPositiveButton("Ok") { _, _ -> }
-                .show()
-
-        }
-
-            }
 
 
-        }
+
+    }
+
+            fun showFeedBack(message: String)  {
+
+
+                AlertDialog.Builder (this)
+                    .setTitle("Error")
+                    .setMessage("message")
+                    .setPositiveButton("OK") { _, _  ->}
+                    .show()
+
+                }
+
+            }            }
+
+
+
+
+
 

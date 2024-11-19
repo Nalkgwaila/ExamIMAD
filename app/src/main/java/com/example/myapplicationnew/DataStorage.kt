@@ -4,14 +4,22 @@ package com.example.myapplicationnew
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import java.util.ArrayList
 import androidx.recyclerview.widget.RecyclerView
 
 class DataStorage : ComponentActivity() {
     private lateinit var runData: Array<Array<String>>
-    val dates = arrayOf<String>()
-    val distances = arrayOf<Double>()
-    val times = arrayOf<Double>()
-    val pacers = arrayOf<Double>()
+    private val dates: MutableList<String> = mutableListOf()
+    private val distances: MutableList<String> = mutableListOf()
+    private val times: MutableList<String> = mutableListOf()
+    private val pacers: MutableList<String> = mutableListOf()
+
+    val dates2 = arrayOf<String>()
+    val distances2 = arrayOf<Double>()
+    val times2 = arrayOf<Double>()
+    val pacers2 = arrayOf<Double>()
+
+    val distances3 : List <Double> = listOf(4.0 , 7.5 , 10.0)
 
 
 
@@ -20,7 +28,7 @@ class DataStorage : ComponentActivity() {
         setContent {
 
         }
-        var dates = mutableListOf<String>()
+        var dates  = mutableListOf<String>()
         var distances = mutableListOf<Double>()
         var times = mutableListOf<Double>()
         var pacers = mutableListOf<Double>()
@@ -65,12 +73,13 @@ class DataStorage : ComponentActivity() {
 
         }
     fun addRunningData(date: String, distance: Double,) {
+
         dates.add(date)
-        distances.add(distance)
-        times.add (times)
-        pacers.add(pacers)
+        distances.add(String())
+        times.add (String())
+        pacers.add(String())
     }
-    fun calculateTotalDistance() : Double {
+    fun calculateTotalDistance(distances: List<Double>) : Double {
         return distances.sum ()
     }
     fun displayRunningData () {
