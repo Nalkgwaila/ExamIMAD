@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/morning_run"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Morning run data"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/afternoon_run"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:text="Afternoon run data"
+        />
+
+
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="16sp"
+        android:backgroundTint="@color/purple_200"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+
+        />
+
+
+
+
+</LinearLayout>

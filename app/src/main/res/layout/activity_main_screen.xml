@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id ="@+id/btnNavigate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ViewDetails"
+        android:backgroundTint="#4C4F50"
+        android:textColor="#FFF"
+        android:layout_marginTop="48dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnClear_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Clear"
+        android:backgroundTint="#4C4F50"
+        android:textColor="#FFFF"
+        android:layout_marginTop="48dp"
+            />
+
+    <EditText
+        android:id = "@+id/et_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "App_name"
+        android:inputType="text"
+        />
+
+
+</LinearLayout>

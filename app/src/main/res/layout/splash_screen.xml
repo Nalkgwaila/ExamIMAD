@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvApp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Running App"
+
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Naledi"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/tvStudent_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ST10252095"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        />
+
+    <Button
+        android:id="@+id/btnNavigate"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#7BBD2E"
+        android:textColor="@color/white"
+        android:text="Main Screen"
+        />
+
+</LinearLayout>
